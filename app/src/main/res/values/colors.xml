@@ -5,4 +5,12 @@
     <color name="darkgrey">#252525</color>
     <color name="lightgrey_bg">#C4C4C4</color>
     <color name="greybg">#3B3B3B</color>
+    <color name="pink">#FD99FF</color>
+    <color name="peach">#FF9E9E</color>
+    <color name="green">#91F48F</color>
+    <color name="yellow">#FFF599</color>
+    <color name="lightblue">#9EFFFF</color>
+    <color name="purple">#B69CFF</color>
+
+
 </resources>

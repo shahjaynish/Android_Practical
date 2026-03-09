@@ -3,18 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/darkgrey"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/darkgrey"
-    android:orientation="vertical"
-    tools:context=".ui.MainActivity">
+    tools:context=".ui.MyNotesActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/homescreen_icon"
-        android:layout_gravity="center" />
+    <LinearLayout
+        android:id="@+id/addNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/lightgrey_bg"
+        android:padding="10dp">
 
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/plus_icon"
+            android:src="@drawable/info_icon"
+            app:tint="@color/white" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,8 +37,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
@@ -72,24 +83,11 @@
 
         </LinearLayout>
 
-
-        <LinearLayout
-            android:id="@+id/addNote"
-            android:layout_width="wrap_content"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="end"
-            android:layout_gravity="end"
-            android:layout_marginBottom="40dp"
-            android:background="@drawable/lightgrey_bg"
-            android:padding="10dp">
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/plus_icon"
-                android:src="@drawable/info_icon"
-                app:tint="@color/white" />
-        </LinearLayout>
+            android:layout_marginTop="10dp"/>
 
 
     </LinearLayout>

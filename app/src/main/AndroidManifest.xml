@@ -12,7 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Practical">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.EditorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MyNotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
