@@ -31,5 +31,5 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-//This Is the Home screen This Screen will be showed First TO the user
-//First There will be only an image showing no notes and when user starts adding notes we will show his made notes on Home Screen
+// This Is the Home screen This Screen will be showed First TO the user
+// First There will be only an image showing no notes and when user starts adding notes we will show his made notes on Home Screen
