@@ -20,5 +20,11 @@ class EditorActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        binding.back.setOnClickListener {
+            finish()
+        }
+        binding.save.setOnClickListener {
+            finish()
+        }
     }
 }

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginVertical="10dp"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    android:background="@drawable/savedialog_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/info_icon"
+        android:tint="#606060"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Changes ?"
+        android:layout_gravity="center"
+        android:textColor="#CFCFCF"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/discard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/deletebtn_bg">
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discard"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/savebtn_bg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
