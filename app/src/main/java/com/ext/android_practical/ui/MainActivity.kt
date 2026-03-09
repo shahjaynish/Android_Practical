@@ -24,5 +24,12 @@ class MainActivity : AppCompatActivity() {
         binding.info.setOnClickListener {
             startActivity(Intent(this, MyNotesActivity::class.java))
         }
+        binding.search.setOnClickListener {
+            startActivity(Intent(this, SearchFragment::class.java))
+            //Here We Have to open Search fragment
+        }
     }
 }
+
+//This Is the Home screen This Screen will be showed First TO the user
+//First There will be only an image showing no notes and when user starts adding notes we will show his made notes on Home Screen

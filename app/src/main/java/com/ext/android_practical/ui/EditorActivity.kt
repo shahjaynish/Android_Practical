@@ -1,6 +1,8 @@
 package com.ext.android_practical.ui
 
+import android.app.Dialog
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -24,7 +26,25 @@ class EditorActivity : AppCompatActivity() {
             finish()
         }
         binding.save.setOnClickListener {
-            finish()
+            showSaveDialog()
+            // When USer Clicks Save Show Him Dialog Box That if he wants to save the notes or not and if yes store it and sow title in list and if not Discard the note
+        }
+    }
+    private fun showSaveDialog(){
+        val dialog = Dialog(this)
+        dialog.setContentView(R.layout.dialog_save)
+        dialog.show()
+        dialog.findViewById<TextView>(R.id.discard).setOnClickListener {
+            dialog.dismiss()
+        }
+        dialog.findViewById<TextView>(R.id.save).setOnClickListener {
+            var title = binding.noteTitle.text.toString()
+            var content = binding.noteContent.text.toString()
+            dialog.dismiss()
+            //Before Dismissing the dialog we have to save Title of Note and its Content in Database and show it in List
         }
     }
 }
+
+
+// Show This Screen To The User when User want to create

@@ -33,3 +33,6 @@ class MyNotesAdapter(private val Headings: List<headings>) :
         holder.heading.text = heading.headings
     }
 }
+
+// In Adapter We Have to add Onclick So if user clicks on any notes it would open in editor Screen but due to time constraint i could not add this functionality
+// Just We have to pass listener also in adapter Parameter so when user clcks on any note we can get its position and detail

@@ -38,3 +38,5 @@ class MyNotesActivity : AppCompatActivity() {
         }
     }
 }
+
+// Here We will Show all the titles of the notes that user made and when user clicks any particular title he can go in editor screen and edit that particular Note

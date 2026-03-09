@@ -86,8 +86,8 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:background="@drawable/plus_icon"
-                android:src="@drawable/info_icon"
+                android:background="lighgrey_bg"
+                android:src="@drawable/plus_icon"
                 app:tint="@color/white" />
         </LinearLayout>
 
